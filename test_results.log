@@ -1,0 +1,63 @@
+2025-05-18 21:14:48 - bot_tester - INFO - === Starting trading bot validation ===
+2025-05-18 21:14:48 - bot_tester - INFO - 
+=== Running: Import Check ===
+2025-05-18 21:14:48 - bot_tester - INFO - Testing module imports...
+2025-05-18 21:14:48 - bot_tester - INFO - ✅ Successfully imported pandas
+2025-05-18 21:14:48 - bot_tester - INFO - ✅ Successfully imported numpy
+2025-05-18 21:14:48 - bot_tester - INFO - ✅ Successfully imported matplotlib
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported binance.client
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported dotenv
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported yaml
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported schedule
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported ta
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Running: Project Structure Check ===
+2025-05-18 21:14:49 - bot_tester - INFO - Checking project structure...
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Directory exists: config
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Directory exists: data
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Directory exists: logs
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Directory exists: strategies
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Directory exists: utils
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: bot.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: backtest.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: README.md
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: requirements.txt
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: config/config.yaml
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: strategies/scalping_strategy.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: utils/indicators.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: utils/logger.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: utils/risk_management.py
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ File exists: utils/telegram_notifications.py
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Running: Environment File Check ===
+2025-05-18 21:14:49 - bot_tester - INFO - Checking .env file...
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Environment variable found: API_KEY
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Environment variable found: API_SECRET
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Environment variable found: TELEGRAM_TOKEN
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Environment variable found: TELEGRAM_CHAT_ID
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Running: Config File Check ===
+2025-05-18 21:14:49 - bot_tester - INFO - Checking config.yaml file...
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Config section found: trading_pairs
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Config section found: risk_management
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Config section found: strategy
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Config section found: exchange
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Config section found: general
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Running: Bot Import Test ===
+2025-05-18 21:14:49 - bot_tester - INFO - Testing bot imports...
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported TradingBot class
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Running: Backtest Import Test ===
+2025-05-18 21:14:49 - bot_tester - INFO - Testing backtest imports...
+2025-05-18 21:14:49 - bot_tester - INFO - ✅ Successfully imported backtest functions
+2025-05-18 21:14:49 - bot_tester - INFO - 
+=== Test Results Summary ===
+2025-05-18 21:14:49 - bot_tester - INFO - Import Check: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - Project Structure Check: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - Environment File Check: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - Config File Check: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - Bot Import Test: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - Backtest Import Test: PASS
+2025-05-18 21:14:49 - bot_tester - INFO - 
+✅ All tests passed! Your trading bot should work correctly.

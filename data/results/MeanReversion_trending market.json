@@ -1,0 +1,8 @@
+{
+  "strategy_name": "MeanReversion",
+  "market_type": "trending market",
+  "timestamp": "2025-05-20T13:36:40.221496",
+  "total_return": 0.0,
+  "win_rate": 0.0,
+  "sharpe_ratio": 0.0
+}

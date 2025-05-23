@@ -1,0 +1,17 @@
+# Crontab entries for Strategy Analysis System
+# Copy this file to /etc/cron.d/strategy-analysis or use it with crontab -e
+
+# Format:
+# minute hour day month day-of-week user command
+
+# Run the data pipeline daily at 2am
+0 2 * * * strategyuser /opt/strategy-analysis/production_deploy.sh pipeline > /opt/strategy-analysis/logs/cron_pipeline_$(date +\%Y\%m\%d).log 2>&1
+
+# Run system monitoring every 15 minutes
+*/15 * * * * strategyuser /opt/strategy-analysis/system_monitor.py --json > /opt/strategy-analysis/logs/cron_monitor_$(date +\%Y\%m\%d).log 2>&1
+
+# Rotate logs weekly on Sunday at 3am
+0 3 * * 0 strategyuser /opt/strategy-analysis/rotate_logs.sh > /opt/strategy-analysis/logs/cron_logrotate_$(date +\%Y\%m\%d).log 2>&1
+
+# Create a system backup daily at 4am
+0 4 * * * strategyuser /opt/strategy-analysis/backup_restore.sh backup > /opt/strategy-analysis/logs/cron_backup_$(date +\%Y\%m\%d).log 2>&1

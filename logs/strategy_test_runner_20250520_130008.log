@@ -1,0 +1,66 @@
+2025-05-20 13:00:08,478 - test_runner - INFO - Starting strategy tests...
+2025-05-20 13:00:08,478 - test_runner - INFO - Running /Users/antenehtessema/Desktop/botsalgo/test_all_strategies.py
+2025-05-20 13:00:09,625 - test_runner - INFO - Test output:
+2025-05-20 13:00:09,625 - test_runner - WARNING - Errors encountered:
+2025-05-20 13:00:09,625 - test_runner - WARNING - 2025-05-20 13:00:09 - strategy_test - INFO - Starting comprehensive strategy testing
+2025-05-20 13:00:09,625 - test_runner - WARNING - 2025-05-20 13:00:09 - strategy_test - INFO - Testing Scalping strategy
+2025-05-20 13:00:09,625 - test_runner - WARNING - 2025-05-20 13:00:09 - strategy_test - INFO - Testing Scalping on normal market
+2025-05-20 13:00:09,625 - test_runner - WARNING - Traceback (most recent call last):
+2025-05-20 13:00:09,625 - test_runner - WARNING -   File "/Users/antenehtessema/Desktop/botsalgo/test_all_strategies.py", line 345, in <module>
+2025-05-20 13:00:09,625 - test_runner - WARNING -     results = test_all_strategies()
+2025-05-20 13:00:09,625 - test_runner - WARNING -               ^^^^^^^^^^^^^^^^^^^^^
+2025-05-20 13:00:09,625 - test_runner - WARNING -   File "/Users/antenehtessema/Desktop/botsalgo/test_all_strategies.py", line 283, in test_all_strategies
+2025-05-20 13:00:09,625 - test_runner - WARNING -     results = _run_strategy(strategy_class, name, params=None, market_types=None, plot=True)
+2025-05-20 13:00:09,625 - test_runner - WARNING -               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-20 13:00:09,625 - test_runner - WARNING -   File "/Users/antenehtessema/Desktop/botsalgo/test_all_strategies.py", line 236, in _run_strategy
+2025-05-20 13:00:09,625 - test_runner - WARNING -     strategy = strategy_class(strategy_name, params)
+2025-05-20 13:00:09,626 - test_runner - WARNING -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-20 13:00:09,626 - test_runner - WARNING -   File "/Users/antenehtessema/Desktop/botsalgo/strategies/scalping_strategy.py", line 88, in __init__
+2025-05-20 13:00:09,626 - test_runner - WARNING -     self.backtest_enhancer = BacktestEnhancer(self.params.get('enhancer_config', {}))
+2025-05-20 13:00:09,626 - test_runner - WARNING -                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-20 13:00:09,626 - test_runner - WARNING - TypeError: BacktestEnhancer() takes no arguments
+2025-05-20 13:00:09,626 - test_runner - INFO - Generated 43 plot files
+2025-05-20 13:00:09,626 - test_runner - INFO - Test log file created at /Users/antenehtessema/Desktop/botsalgo/logs/strategy_test.log
+2025-05-20 13:00:09,631 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_normal market.json
+2025-05-20 13:00:09,631 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_trending market.json
+2025-05-20 13:00:09,632 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_sideways market.json
+2025-05-20 13:00:09,632 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_volatile market.json
+2025-05-20 13:00:09,633 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_gappy market.json
+2025-05-20 13:00:09,633 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_missing market.json
+2025-05-20 13:00:09,633 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Scalping_invalid market.json
+2025-05-20 13:00:09,634 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_normal market.json
+2025-05-20 13:00:09,634 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_trending market.json
+2025-05-20 13:00:09,635 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_sideways market.json
+2025-05-20 13:00:09,635 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_volatile market.json
+2025-05-20 13:00:09,636 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_gappy market.json
+2025-05-20 13:00:09,636 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_missing market.json
+2025-05-20 13:00:09,637 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/MeanReversion_invalid market.json
+2025-05-20 13:00:09,637 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_normal market.json
+2025-05-20 13:00:09,647 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_trending market.json
+2025-05-20 13:00:09,647 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_sideways market.json
+2025-05-20 13:00:09,648 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_volatile market.json
+2025-05-20 13:00:09,649 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_gappy market.json
+2025-05-20 13:00:09,649 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_missing market.json
+2025-05-20 13:00:09,650 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/TrendFollowing_invalid market.json
+2025-05-20 13:00:09,650 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_normal market.json
+2025-05-20 13:00:09,651 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_trending market.json
+2025-05-20 13:00:09,651 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_sideways market.json
+2025-05-20 13:00:09,652 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_volatile market.json
+2025-05-20 13:00:09,652 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_gappy market.json
+2025-05-20 13:00:09,653 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_missing market.json
+2025-05-20 13:00:09,653 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/GridTrading_invalid market.json
+2025-05-20 13:00:09,653 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_normal market.json
+2025-05-20 13:00:09,654 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_trending market.json
+2025-05-20 13:00:09,654 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_sideways market.json
+2025-05-20 13:00:09,655 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_volatile market.json
+2025-05-20 13:00:09,655 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_gappy market.json
+2025-05-20 13:00:09,658 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_missing market.json
+2025-05-20 13:00:09,659 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/Arbitrage_invalid market.json
+2025-05-20 13:00:09,660 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_normal market.json
+2025-05-20 13:00:09,661 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_trending market.json
+2025-05-20 13:00:09,664 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_sideways market.json
+2025-05-20 13:00:09,666 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_volatile market.json
+2025-05-20 13:00:09,667 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_gappy market.json
+2025-05-20 13:00:09,667 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_missing market.json
+2025-05-20 13:00:09,667 - test_runner - INFO - Saved results to /Users/antenehtessema/Desktop/botsalgo/data/results/DCA_invalid market.json
+2025-05-20 13:00:09,668 - test_runner - INFO - Strategy tests completed

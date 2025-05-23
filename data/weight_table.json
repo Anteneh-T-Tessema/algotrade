@@ -1,0 +1,58 @@
+{
+  "gappy market": {
+    "Arbitrage": 0.0,
+    "DCA": 0.0,
+    "GridTrading": 0.0,
+    "MeanReversion": 0.0,
+    "Scalping": 1.0,
+    "TrendFollowing": 0.0
+  },
+  "invalid market": {
+    "Arbitrage": 0.0,
+    "DCA": 0.9466666666666667,
+    "GridTrading": 0.0,
+    "MeanReversion": 0.0,
+    "Scalping": 0.05333333333333334,
+    "TrendFollowing": 0.0
+  },
+  "missing market": {
+    "Arbitrage": 0.0,
+    "DCA": 0.0,
+    "GridTrading": 0.0,
+    "MeanReversion": 0.0,
+    "Scalping": 0.0,
+    "TrendFollowing": 0.0
+  },
+  "normal market": {
+    "Arbitrage": 0.5869565217391305,
+    "DCA": 0.0,
+    "GridTrading": 0.41304347826086957,
+    "MeanReversion": 0.0,
+    "Scalping": 0.0,
+    "TrendFollowing": 0.0
+  },
+  "sideways market": {
+    "Arbitrage": 0.5,
+    "DCA": 0.125,
+    "GridTrading": 0.375,
+    "MeanReversion": 0.0,
+    "Scalping": 0.0,
+    "TrendFollowing": 0.0
+  },
+  "trending market": {
+    "Arbitrage": 0.31211180124223603,
+    "DCA": 0.15062111801242237,
+    "GridTrading": 0.30279503105590067,
+    "MeanReversion": 0.0,
+    "Scalping": 0.23447204968944102,
+    "TrendFollowing": 0.0
+  },
+  "volatile market": {
+    "Arbitrage": 0.038461538461538464,
+    "DCA": 0.34615384615384615,
+    "GridTrading": 0.0,
+    "MeanReversion": 0.0,
+    "Scalping": 0.6153846153846154,
+    "TrendFollowing": 0.0
+  }
+}

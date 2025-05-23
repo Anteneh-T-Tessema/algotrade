@@ -1,0 +1,8 @@
+{
+  "strategy_name": "GridTrading",
+  "market_type": "normal market",
+  "timestamp": "2025-05-20T13:36:40.228304",
+  "total_return": 1.47,
+  "win_rate": 1.0,
+  "sharpe_ratio": 0.38
+}

@@ -1,0 +1,325 @@
+// TradingBots.js - Component for managing automated trading bots
+import React, { useState, useEffect, useMemo } from 'react';
+import {
+  Box,
+  Paper,
+  Grid,
+  Typography,
+  CircularProgress,
+  Alert,
+  AlertTitle,
+  Card,
+  CardContent,
+  CardActions,
+  CardHeader,
+  Tab,
+  Tabs,
+  Button,
+  Slider,
+  TextField,
+  FormControl,
+  FormControlLabel,
+  InputLabel,
+  MenuItem,
+  Select,
+  Switch,
+  Divider,
+  Tooltip,
+  IconButton,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Chip,
+  LinearProgress,
+  Stack,
+  Badge,
+  Collapse,
+  Avatar,
+  ButtonGroup,
+  Radio,
+  RadioGroup,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  ToggleButtonGroup,
+  ToggleButton,
+  Autocomplete,
+  Link,
+  InputAdornment
+} from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import {
+  PlayArrow,
+  Stop,
+  Delete,
+  Edit,
+  BarChart,
+  Timeline,
+  Refresh,
+  Add,
+  Save,
+  Close,
+  Settings,
+  ShowChart,
+  TrendingUp,
+  TrendingDown,
+  TrendingFlat,
+  Assessment,
+  Autorenew,
+  Warning,
+  CheckCircle,
+  Error,
+  Info,
+  History,
+  CompareArrows,
+  NotificationsActive,
+  ExpandMore,
+  ImportExport,
+  MoneyOff,
+  AccountBalance,
+  Security,
+  CreditCard,
+  Dashboard,
+  Speed,
+  Tune,
+  Favorite,
+  FavoriteBorder,
+  Share,
+  FileCopy,
+  Code,
+  GitHub,
+  Visibility,
+  VisibilityOff,
+  CloudDownload,
+  Launch
+} from '@mui/icons-material';
+import {
+  LineChart,
+  Line,
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Legend,
+  BarChart as RechartsBarChart,
+  Bar,
+  Scatter,
+  ScatterChart,
+  Pie,
+  PieChart,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
+  ComposedChart,
+  Brush,
+  Tooltip as RechartsTooltip,
+  ResponsiveContainer
+} from 'recharts';
+
+import TradingBotService from '../../services/TradingBotService';
+import TradingService from '../../services/TradingService';
+import RiskManagement from '../../components/Risk/RiskManagement';
+import TradingBotsSettingsTab from './TradingBotsSettingsTab';
+
+const TradingBots = () => {
+  // State for tab management
+  const [tabValue, setTabValue] = useState(0); // Default to first tab (My Bots)
+  
+  // State for bots data
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [bots, setBots] = useState([]);
+  const [botTemplates, setBotTemplates] = useState([]);
+  const [selectedBot, setSelectedBot] = useState(null);
+  const [botDetails, setBotDetails] = useState(null);
+  const [botPerformance, setBotPerformance] = useState(null);
+  const [botTradeHistory, setBotTradeHistory] = useState(null);
+  const [performancePeriod, setPerformancePeriod] = useState('1m');
+
+  // Your existing code goes here
+  // ...
+
+  // Handle tab changes
+  const handleTabChange = (event, newValue) => {
+    setTabValue(newValue);
+  };
+
+  // Render settings tab
+  const renderSettingsTab = () => {
+    return <TradingBotsSettingsTab setError={setError} />;
+  };
+
+  // Render portfolio tab
+  const renderPortfolioTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">Portfolio Management</Typography>
+        <Typography>Portfolio data will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render portfolio view
+  const renderPortfolioView = () => {
+    return (
+      <Box>
+        <Typography variant="h5">Portfolio View</Typography>
+        <Typography>Portfolio details will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render risk management tab
+  const renderRiskManagementTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">Risk Management</Typography>
+        <Typography>Risk management data will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render ML Predictions tab
+  const renderMlPredictionsTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">ML Predictions</Typography>
+        <Typography>ML predictions data will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render News and Sentiment tab
+  const renderNewsAndSentimentTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">News & Sentiment</Typography>
+        <Typography>News and sentiment data will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render Social Trading tab
+  const renderSocialTradingTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">Social Trading</Typography>
+        <Typography>Social trading data will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render Advanced Backtest tab
+  const renderAdvancedBacktestTab = () => {
+    return (
+      <Box>
+        <Typography variant="h5">Advanced Backtesting</Typography>
+        <Typography>Advanced backtest functionality will be displayed here</Typography>
+      </Box>
+    );
+  };
+
+  // Render the main component with responsive design
+  return (
+    <Box sx={{ width: '100%' }}>
+      {/* Top Action Bar */}
+      <Box 
+        sx={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          mb: 2,
+          flexWrap: 'wrap',
+          gap: 1
+        }}
+      >
+        <Box>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Trading Bots
+          </Typography>
+        </Box>
+      </Box>
+      
+      {/* Tabs Navigation */}
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs
+          value={tabValue}
+          onChange={handleTabChange}
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="trading bot tabs"
+        >
+          <Tab label="My Bots" icon={<Dashboard />} iconPosition="start" />
+          <Tab label="Backtest" icon={<Assessment />} iconPosition="start" />
+          <Tab label="Portfolio" icon={<AccountBalance />} iconPosition="start" />
+          <Tab label="Social" icon={<Share />} iconPosition="start" />
+          <Tab label="News & Sentiment" icon={<Info />} iconPosition="start" />
+          <Tab label="ML Predictions" icon={<TrendingUp />} iconPosition="start" />
+          <Tab label="Risk Management" icon={<Security />} iconPosition="start" />
+          <Tab label="Settings" icon={<Settings />} iconPosition="start" />
+        </Tabs>
+      </Box>
+      
+      {/* Error Alert */}
+      {error && (
+        <Alert severity="error" sx={{ mt: 2 }} onClose={() => setError(null)}>
+          {error}
+        </Alert>
+      )}
+      
+      {/* Loading State */}
+      {loading && tabValue === 0 && (
+        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+          <CircularProgress />
+        </Box>
+      )}
+      
+      {/* Content based on selected tab */}
+      <Box sx={{ mt: 2, p: 1 }}>
+        {/* Tab 0: My Bots */}
+        {tabValue === 0 && (
+          <Box>
+            <Typography>My Bots content will go here</Typography>
+          </Box>
+        )}
+        
+        {/* Tab 1: Backtesting */}
+        {tabValue === 1 && renderAdvancedBacktestTab()}
+        
+        {/* Tab 2: Portfolio */}
+        {tabValue === 2 && renderPortfolioView()}
+        
+        {/* Tab 3: Social Trading */}
+        {tabValue === 3 && renderSocialTradingTab()}
+        
+        {/* Tab 4: News & Sentiment */}
+        {tabValue === 4 && renderNewsAndSentimentTab()}
+        
+        {/* Tab 5: ML Predictions */}
+        {tabValue === 5 && renderMlPredictionsTab()}
+        
+        {/* Tab 6: Risk Management */}
+        {tabValue === 6 && renderRiskManagementTab()}
+        
+        {/* Tab 7: Settings */}
+        {tabValue === 7 && renderSettingsTab()}
+      </Box>
+    </Box>
+  );
+};
+
+export default TradingBots;

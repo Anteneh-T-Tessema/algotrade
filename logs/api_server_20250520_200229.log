@@ -1,0 +1,38 @@
+2025-05-20 20:02:29,352 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 20:02:29,576 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 20:02:29,585 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0 on 0.0.0.0:8000
+2025-05-20 20:02:29,585 - strategy-api - INFO - API URLs:
+2025-05-20 20:02:29,585 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 20:02:29,585 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 20:02:29,585 - strategy-api - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 20:02:29,585 - strategy-api - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 20:02:29,821 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 20:02:29,830 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0
+2025-05-20 20:02:29,832 - strategy-api - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 20:02:29,832 - strategy-api - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 20:02:39,617 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0003s
+2025-05-20 20:02:39,822 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:02:40,131 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.5120s
+2025-05-20 20:02:40,351 - strategy-api - INFO - Created user: testuser_1912
+2025-05-20 20:02:40,351 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_1912 registered
+2025-05-20 20:02:40,352 - strategy-api - INFO - Request: POST /v1/auth/register Status: 200 Time: 0.2163s
+2025-05-20 20:02:40,552 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:40,552 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1986s
+2025-05-20 20:02:40,554 - strategy-api - INFO - Request: POST /v1/auth/mfa/setup Status: 422 Time: 0.0003s
+2025-05-20 20:02:40,559 - strategy-api - INFO - Request: POST /v1/auth/mfa/enable Status: 422 Time: 0.0004s
+2025-05-20 20:02:40,764 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:40,764 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.2029s
+2025-05-20 20:02:40,766 - strategy-api - INFO - Request: POST /v1/auth/mfa/disable Status: 422 Time: 0.0002s
+2025-05-20 20:02:40,768 - strategy-api - INFO - Request: GET /v1/admin/users Status: 422 Time: 0.0002s
+2025-05-20 20:02:40,770 - strategy-api - INFO - Request: PUT /v1/admin/users/testuser_1912 Status: 422 Time: 0.0004s
+2025-05-20 20:02:40,772 - strategy-api - INFO - Request: DELETE /v1/admin/users/testuser_1912 Status: 422 Time: 0.0002s
+2025-05-20 20:02:50,773 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:02:50,773 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.2061s
+2025-05-20 20:02:50,776 - strategy-api - INFO - Request: GET /v1/admin/users Status: 422 Time: 0.0003s
+2025-05-20 20:04:00,514 - strategy-api - INFO - Shutting down Strategy Analysis API v2.0.0
+2025-05-20 20:04:00,515 - strategy-api - INFO - API uptime: 90.90s

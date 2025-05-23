@@ -1,0 +1,64 @@
+2025-05-20 20:29:16,602 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 20:29:16,818 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 20:29:17,010 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 20:29:17,021 - strategy-api-secure - INFO - Starting Strategy Analysis API (Secure) v3.0.0
+2025-05-20 20:29:17,023 - strategy-api-secure - WARNING - Weights for market type missing market do not sum to 1.0: 0.0
+2025-05-20 20:29:17,023 - strategy-api-secure - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 20:29:17,023 - strategy-api-secure - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 20:29:17,023 - audit - INFO - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 20:29:51,743 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0003s
+2025-05-20 20:29:51,943 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:29:51,947 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.2015s
+2025-05-20 20:29:52,156 - strategy-api-secure - INFO - Created user: testuser_5369
+2025-05-20 20:29:52,156 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5369 registered
+2025-05-20 20:29:52,156 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.2070s
+2025-05-20 20:29:52,357 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5369 logged in
+2025-05-20 20:29:52,357 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1984s
+2025-05-20 20:29:52,360 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 20:29:52,365 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/enable Client: 127.0.0.1 Status: 422 Time: 0.0005s
+2025-05-20 20:29:52,568 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5369 logged in
+2025-05-20 20:29:52,568 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.2013s
+2025-05-20 20:29:52,571 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/disable Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 20:29:52,573 - strategy-api-secure - INFO - Request: GET /v1/admin/users Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 20:29:52,590 - strategy-api-secure - INFO - Request: PUT /v1/admin/users/testuser_5369 Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 20:29:52,596 - strategy-api-secure - INFO - Request: DELETE /v1/admin/users/testuser_5369 Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 20:29:52,602 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0002s
+2025-05-20 20:29:52,800 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:29:52,800 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1969s
+2025-05-20 20:29:52,802 - strategy-api-secure - INFO - Request: GET /v1/analysis/summary Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 20:29:52,804 - strategy-api-secure - INFO - Request: GET /v1/analysis/weights Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 20:30:19,009 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0002s
+2025-05-20 20:30:19,202 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:30:19,203 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1919s
+2025-05-20 20:30:19,395 - strategy-api-secure - INFO - Created user: testuser_7660
+2025-05-20 20:30:19,395 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_7660 registered
+2025-05-20 20:30:19,395 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.1906s
+2025-05-20 20:30:19,586 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7660 logged in
+2025-05-20 20:30:19,587 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1886s
+2025-05-20 20:30:19,589 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 20:30:19,595 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/enable Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 20:30:19,790 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7660 logged in
+2025-05-20 20:30:19,790 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1936s
+2025-05-20 20:30:19,793 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/disable Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 20:30:19,795 - strategy-api-secure - INFO - Request: GET /v1/admin/users Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 20:30:19,818 - strategy-api-secure - INFO - Request: PUT /v1/admin/users/testuser_7660 Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 20:30:19,824 - strategy-api-secure - INFO - Request: DELETE /v1/admin/users/testuser_7660 Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 20:43:02,464 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0002s
+2025-05-20 20:43:02,668 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:43:02,669 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.2003s
+2025-05-20 20:43:02,864 - strategy-api-secure - INFO - Created user: testuser_5930
+2025-05-20 20:43:02,864 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5930 registered
+2025-05-20 20:43:02,865 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.1938s
+2025-05-20 20:43:03,054 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5930 logged in
+2025-05-20 20:43:03,058 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1905s
+2025-05-20 20:43:03,060 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 20:43:03,065 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/enable Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 20:43:03,257 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5930 logged in
+2025-05-20 20:43:03,257 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1905s
+2025-05-20 20:43:03,261 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/disable Client: 127.0.0.1 Status: 422 Time: 0.0005s
+2025-05-20 20:43:03,262 - strategy-api-secure - INFO - Request: GET /v1/admin/users Client: 127.0.0.1 Status: 422 Time: 0.0002s

@@ -1,0 +1,20 @@
+2025-05-20 19:49:23,048 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 19:49:23,267 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:49:23,276 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0 on 0.0.0.0:8000
+2025-05-20 19:49:23,276 - strategy-api - INFO - API URLs:
+2025-05-20 19:49:23,276 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 19:49:23,276 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 19:49:23,276 - strategy-api - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 19:49:23,276 - strategy-api - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 19:49:23,499 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:49:23,507 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0
+2025-05-20 19:49:23,508 - strategy-api - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 19:49:23,508 - strategy-api - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 19:49:48,297 - strategy-api - INFO - Created user: testcurl
+2025-05-20 19:49:48,297 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testcurl registered
+2025-05-20 19:49:48,298 - strategy-api - INFO - Request: POST /v1/auth/register Status: 200 Time: 0.1987s

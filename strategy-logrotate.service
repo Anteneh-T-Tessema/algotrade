@@ -1,0 +1,12 @@
+[Unit]
+Description=Log Rotation Service for Strategy Analysis System
+
+[Service]
+Type=oneshot
+User=strategyuser
+Group=strategyuser
+WorkingDirectory=/opt/strategy-analysis
+ExecStart=/opt/strategy-analysis/rotate_logs.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=strategy-logrotate

@@ -1,0 +1,19 @@
+[Unit]
+Description=Strategy Analysis System Monitoring Service
+After=network.target
+
+[Service]
+Type=simple
+User=strategyuser
+Group=strategyuser
+WorkingDirectory=/opt/strategy-analysis
+ExecStart=/opt/strategy-analysis/system_monitor.py --alerts
+Restart=on-failure
+RestartSec=10s
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=strategy-monitor
+Environment="PATH=/opt/strategy-analysis/venv/bin:/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target

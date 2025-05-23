@@ -1,0 +1,8 @@
+{
+  "strategy_name": "Scalping",
+  "market_type": "gappy market",
+  "timestamp": "2025-05-20T13:36:40.217733",
+  "total_return": 15.75,
+  "win_rate": 1.0,
+  "sharpe_ratio": 0.69
+}

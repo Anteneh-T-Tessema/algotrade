@@ -1,0 +1,61 @@
+# Trading pairs configuration
+trading_pairs:
+  - symbol: BTCUSDT
+    quote_asset: USDT
+    base_asset: BTC
+    allocation: 0.30  # 30% of total capital
+    min_quantity: 0.0001
+    price_precision: 2
+    quantity_precision: 5
+  - symbol: ETHUSDT
+    quote_asset: USDT
+    base_asset: ETH
+    allocation: 0.30  # 30% of total capital
+    min_quantity: 0.001
+    price_precision: 2
+    quantity_precision: 5
+  - symbol: BNBUSDT
+    quote_asset: USDT
+    base_asset: BNB
+    allocation: 0.20  # 20% of total capital
+    min_quantity: 0.01
+    price_precision: 2
+    quantity_precision: 3
+
+# Risk management parameters
+risk_management:
+  max_open_trades_per_pair: 3
+  max_daily_trades: 100
+  max_capital_allocation: 0.80  # 80% of total capital
+  stop_loss_percentage: 0.5  # 0.5% stop loss
+  take_profit_percentage: 1.0  # 1.0% take profit
+  trailing_stop_activation: 0.7  # Activate trailing stop at 0.7% profit
+  trailing_stop_distance: 0.2  # 0.2% trailing stop
+  
+# Scalping strategy parameters
+strategy:
+  timeframe: 1m  # 1-minute candlesticks
+  ema_fast: 8
+  ema_slow: 21
+  rsi_period: 14
+  rsi_oversold: 30
+  rsi_overbought: 70
+  bollinger_period: 20
+  bollinger_std: 2
+  volume_ma_period: 20
+  min_volume_multiplier: 1.5
+  profit_factor_min: 1.8
+
+# Exchange settings
+exchange:
+  name: binance
+  testnet: true  # Set to false for live trading
+  use_isolated_margin: false
+
+# General settings
+general:
+  trade_start_time: "00:00:00"  # 24-hour format
+  trade_end_time: "23:59:59"  # 24-hour format
+  telegram_notifications: true
+  log_level: INFO
+  keep_data_days: 7

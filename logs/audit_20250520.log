@@ -1,0 +1,82 @@
+2025-05-20 19:37:31,436 - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 19:37:31,436 - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 19:38:20,023 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:38:20,023 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:38:20,227 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_4487 registered
+2025-05-20 19:38:20,227 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_4487 registered
+2025-05-20 19:38:20,429 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_4487 logged in
+2025-05-20 19:38:20,429 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_4487 logged in
+2025-05-20 19:40:24,911 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:24,911 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:25,108 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9371 registered
+2025-05-20 19:40:25,108 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9371 registered
+2025-05-20 19:40:25,304 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9371 logged in
+2025-05-20 19:40:25,304 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9371 logged in
+2025-05-20 19:40:59,662 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:59,662 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:59,861 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9043 registered
+2025-05-20 19:40:59,861 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9043 registered
+2025-05-20 19:41:00,060 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:00,060 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:00,265 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:00,265 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:34,338 - SECURITY | Type: SHUTDOWN | Severity: INFO | Details: API Server stopped, uptime=243.31s
+2025-05-20 19:41:34,338 - SECURITY | Type: SHUTDOWN | Severity: INFO | Details: API Server stopped, uptime=243.31s
+2025-05-20 19:42:25,781 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:42:25,781 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:42:25,987 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_3245 registered
+2025-05-20 19:42:25,987 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_3245 registered
+2025-05-20 19:42:26,194 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_3245 logged in
+2025-05-20 19:42:26,194 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_3245 logged in
+2025-05-20 19:44:29,074 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:44:29,074 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:44:29,277 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5525 registered
+2025-05-20 19:44:29,277 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5525 registered
+2025-05-20 19:44:29,477 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:29,477 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:29,683 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:29,683 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:38,376 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:44:38,376 - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:46:03,877 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:46:03,877 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:47:14,797 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:47:14,797 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:49:48,297 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testcurl registered
+2025-05-20 19:49:48,297 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testcurl registered
+2025-05-20 19:58:28,545 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:58:28,545 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:59:04,351 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:59:04,351 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:59:04,542 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_7610 registered
+2025-05-20 19:59:04,542 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_7610 registered
+2025-05-20 19:59:04,734 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 19:59:04,734 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 19:59:04,931 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 19:59:04,931 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 20:02:39,822 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:02:39,822 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:02:40,351 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_1912 registered
+2025-05-20 20:02:40,351 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_1912 registered
+2025-05-20 20:02:40,552 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:40,552 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:40,764 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:40,764 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_1912 logged in
+2025-05-20 20:02:50,773 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:02:50,773 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:26:15,380 - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 20:29:17,023 - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 20:29:51,943 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:29:52,156 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5369 registered
+2025-05-20 20:29:52,357 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5369 logged in
+2025-05-20 20:29:52,568 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5369 logged in
+2025-05-20 20:29:52,800 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:30:19,202 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:30:19,395 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_7660 registered
+2025-05-20 20:30:19,586 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7660 logged in
+2025-05-20 20:30:19,790 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7660 logged in
+2025-05-20 20:43:02,668 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 20:43:02,864 - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5930 registered
+2025-05-20 20:43:03,054 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5930 logged in
+2025-05-20 20:43:03,257 - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5930 logged in
+2025-05-20 20:50:28,617 - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0

@@ -1,0 +1,44 @@
+2025-05-20 19:58:21,318 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 19:58:21,532 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:58:21,541 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0 on 0.0.0.0:8000
+2025-05-20 19:58:21,541 - strategy-api - INFO - API URLs:
+2025-05-20 19:58:21,542 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 19:58:21,542 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 19:58:21,542 - strategy-api - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 19:58:21,542 - strategy-api - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 19:58:21,761 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:58:21,770 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0
+2025-05-20 19:58:21,772 - strategy-api - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 19:58:21,772 - strategy-api - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 19:58:28,354 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0003s
+2025-05-20 19:58:28,545 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:58:28,549 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1932s
+2025-05-20 19:58:28,552 - strategy-api - INFO - Loading summary data from /Users/antenehtessema/Desktop/botsalgo/data/summary_report.csv
+2025-05-20 19:58:28,553 - strategy-api - INFO - Processed 42 summary records successfully
+2025-05-20 19:58:28,553 - strategy-api - INFO - Request: GET /v1/analysis/summary Status: 200 Time: 0.0028s
+2025-05-20 19:58:28,556 - strategy-api - INFO - Loading weights data from /Users/antenehtessema/Desktop/botsalgo/data/weight_table.json
+2025-05-20 19:58:28,556 - strategy-api - INFO - Loaded weights for 7 market types
+2025-05-20 19:58:28,556 - strategy-api - INFO - Request: GET /v1/analysis/weights Status: 200 Time: 0.0010s
+2025-05-20 19:59:04,154 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0002s
+2025-05-20 19:59:04,351 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User admin logged in
+2025-05-20 19:59:04,351 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1955s
+2025-05-20 19:59:04,542 - strategy-api - INFO - Created user: testuser_7610
+2025-05-20 19:59:04,542 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_7610 registered
+2025-05-20 19:59:04,542 - strategy-api - INFO - Request: POST /v1/auth/register Status: 200 Time: 0.1890s
+2025-05-20 19:59:04,734 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 19:59:04,734 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1895s
+2025-05-20 19:59:04,736 - strategy-api - INFO - Request: POST /v1/auth/mfa/setup Status: 422 Time: 0.0003s
+2025-05-20 19:59:04,741 - strategy-api - INFO - Request: POST /v1/auth/mfa/enable Status: 422 Time: 0.0003s
+2025-05-20 19:59:04,931 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_7610 logged in
+2025-05-20 19:59:04,931 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1886s
+2025-05-20 19:59:04,933 - strategy-api - INFO - Request: POST /v1/auth/mfa/disable Status: 422 Time: 0.0002s
+2025-05-20 19:59:04,935 - strategy-api - INFO - Request: GET /v1/admin/users Status: 422 Time: 0.0002s
+2025-05-20 19:59:04,937 - strategy-api - INFO - Request: PUT /v1/admin/users/testuser_7610 Status: 405 Time: 0.0001s
+2025-05-20 19:59:04,938 - strategy-api - INFO - Request: DELETE /v1/admin/users/testuser_7610 Status: 405 Time: 0.0001s
+2025-05-20 20:02:20,921 - strategy-api - INFO - Shutting down Strategy Analysis API v2.0.0
+2025-05-20 20:02:20,921 - strategy-api - INFO - API uptime: 239.35s

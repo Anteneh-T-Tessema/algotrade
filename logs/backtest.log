@@ -1,0 +1,56 @@
+2025-05-18 21:11:12 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:16:07 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:18:20 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:18:20 - backtest - ERROR - Error connecting to Binance API: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+2025-05-18 21:18:20 - backtest - WARNING - Using mock data for testing.
+2025-05-18 21:18:20 - backtest - INFO - Generating mock price data for testing
+2025-05-18 21:18:20 - backtest - WARNING - No complete trades found
+2025-05-18 21:21:35 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:21:35 - backtest - ERROR - Error connecting to Binance API: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+2025-05-18 21:21:35 - backtest - WARNING - Using mock data for testing.
+2025-05-18 21:21:35 - backtest - INFO - Generating mock price data for testing
+2025-05-18 21:21:35 - backtest - WARNING - No complete trades found
+2025-05-18 21:33:06 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:33:06 - backtest - ERROR - Error connecting to Binance API: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+2025-05-18 21:33:06 - backtest - WARNING - Using mock data for testing.
+2025-05-18 21:33:06 - backtest - INFO - Generating mock price data for testing
+2025-05-18 21:33:06 - backtest - INFO - Using mock trading strategy for generated data
+2025-05-18 21:33:06 - backtest - INFO - BUY signal: Price 33516.30931217429 crossed above SMA 33039.36901688295
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 4.34% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 7.20% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 9.56% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 10.32% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 10.10% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 8.50% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 5.83% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price rose 3.07% (overbought)
+2025-05-18 21:33:06 - backtest - INFO - SELL signal: Price 37814.001369974336 crossed below SMA 37991.168261018036
+2025-05-18 21:33:06 - backtest - INFO - BUY signal: Price dropped -3.07% (oversold)
+2025-05-18 21:33:06 - backtest - INFO - BUY signal: Price dropped -3.33% (oversold)
+2025-05-18 21:33:06 - backtest - INFO - BUY signal: Price 37186.30838258075 crossed above SMA 37065.59801633069
+2025-05-18 21:33:06 - backtest - INFO - BUY at 33516.30931217429, position: 0.029836220649651454
+2025-05-18 21:33:06 - backtest - INFO - SELL at 34252.34457125721, profit: 2.20%
+2025-05-18 21:33:06 - backtest - INFO - BUY at 37046.09696880291, position: 0.02758618569876686
+2025-05-18 21:33:06 - backtest - INFO - FINAL at 37186.30838258075, profit: 0.38%
+2025-05-18 21:34:09 - backtest - INFO - Starting backtest for BTCUSDT from 2025-05-17 to now
+2025-05-18 21:34:09 - backtest - ERROR - Error connecting to Binance API: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+2025-05-18 21:34:09 - backtest - WARNING - Using mock data for testing.
+2025-05-18 21:34:09 - backtest - INFO - Generating mock price data for testing
+2025-05-18 21:34:09 - backtest - INFO - Using mock trading strategy for generated data
+2025-05-18 21:34:09 - backtest - INFO - BUY signal: Price 33516.30931217429 crossed above SMA 33039.36901688295
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 4.34% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 7.20% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 9.56% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 10.32% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 10.10% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 8.50% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 5.83% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price rose 3.07% (overbought)
+2025-05-18 21:34:09 - backtest - INFO - SELL signal: Price 37814.001369974336 crossed below SMA 37991.168261018036
+2025-05-18 21:34:09 - backtest - INFO - BUY signal: Price dropped -3.07% (oversold)
+2025-05-18 21:34:09 - backtest - INFO - BUY signal: Price dropped -3.33% (oversold)
+2025-05-18 21:34:09 - backtest - INFO - BUY signal: Price 37186.30838258075 crossed above SMA 37065.59801633069
+2025-05-18 21:34:09 - backtest - INFO - BUY at 33516.30931217429, position: 0.029836220649651454
+2025-05-18 21:34:09 - backtest - INFO - SELL at 34252.34457125721, profit: 2.20%
+2025-05-18 21:34:09 - backtest - INFO - BUY at 37046.09696880291, position: 0.02758618569876686
+2025-05-18 21:34:09 - backtest - INFO - FINAL at 37186.30838258075, profit: 0.38%

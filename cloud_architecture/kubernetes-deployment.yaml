@@ -1,0 +1,208 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-trading-api
+  labels:
+    app: crypto-trading-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: crypto-trading-api
+  template:
+    metadata:
+      labels:
+        app: crypto-trading-api
+    spec:
+      containers:
+      - name: api
+        image: ${ACR_NAME}.azurecr.io/crypto-trading-api:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: crypto-trading-secrets
+              key: database-url
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: crypto-trading-secrets
+              key: jwt-secret
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-trading-api
+spec:
+  selector:
+    app: crypto-trading-api
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-trading-webapp
+  labels:
+    app: crypto-trading-webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: crypto-trading-webapp
+  template:
+    metadata:
+      labels:
+        app: crypto-trading-webapp
+    spec:
+      containers:
+      - name: webapp
+        image: ${ACR_NAME}.azurecr.io/crypto-trading-webapp:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: REACT_APP_API_URL
+          value: "https://api.cryptotrading-platform.com/v1"
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-trading-webapp
+spec:
+  selector:
+    app: crypto-trading-webapp
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-trading-agentic-ai
+  labels:
+    app: crypto-trading-agentic-ai
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: crypto-trading-agentic-ai
+  template:
+    metadata:
+      labels:
+        app: crypto-trading-agentic-ai
+    spec:
+      containers:
+      - name: agentic-ai
+        image: ${ACR_NAME}.azurecr.io/crypto-trading-agentic-ai:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: crypto-trading-secrets
+              key: database-url
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-trading-agentic-ai
+spec:
+  selector:
+    app: crypto-trading-agentic-ai
+  ports:
+  - port: 5000
+    targetPort: 5000
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: crypto-trading-ingress
+  annotations:
+    kubernetes.io/ingress.class: "azure/application-gateway"
+    appgw.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: api.cryptotrading-platform.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: crypto-trading-api
+            port:
+              number: 80
+  - host: app.cryptotrading-platform.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: crypto-trading-webapp
+            port:
+              number: 80
+  - host: ai.cryptotrading-platform.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: crypto-trading-agentic-ai
+            port:
+              number: 5000
+  tls:
+  - hosts:
+    - api.cryptotrading-platform.com
+    - app.cryptotrading-platform.com
+    - ai.cryptotrading-platform.com
+    secretName: crypto-trading-tls-secret

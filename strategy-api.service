@@ -1,0 +1,23 @@
+[Unit]
+Description=Strategy Analysis API Server
+After=network.target
+
+[Service]
+Type=simple
+User=strategyuser
+Group=strategyuser
+WorkingDirectory=/opt/strategy-analysis
+ExecStart=/opt/strategy-analysis/production_deploy.sh api
+ExecStop=/opt/strategy-analysis/production_deploy.sh stop
+Restart=on-failure
+RestartSec=10s
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=strategy-api
+Environment="PORT=8000"
+Environment="HOST=0.0.0.0"
+Environment="DEBUG=false"
+Environment="ENABLE_API_KEY=true"
+
+[Install]
+WantedBy=multi-user.target

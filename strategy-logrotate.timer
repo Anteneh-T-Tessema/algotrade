@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly Log Rotation Timer for Strategy Analysis System
+
+[Timer]
+OnCalendar=Sun 03:00:00
+Persistent=true
+RandomizedDelaySec=15min
+
+[Install]
+WantedBy=timers.target

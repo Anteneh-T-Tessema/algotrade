@@ -1,0 +1,41 @@
+2025-05-20 19:44:22,131 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 19:44:22,347 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:44:22,356 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0 on 0.0.0.0:8000
+2025-05-20 19:44:22,356 - strategy-api - INFO - API URLs:
+2025-05-20 19:44:22,356 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 19:44:22,356 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 19:44:22,356 - strategy-api - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 19:44:22,356 - strategy-api - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 19:44:22,587 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:44:22,595 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0
+2025-05-20 19:44:22,596 - strategy-api - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 19:44:22,596 - strategy-api - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 19:44:28,873 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0003s
+2025-05-20 19:44:29,074 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:44:29,074 - strategy-api - INFO - Request: POST /v1/auth/token Status: 401 Time: 0.1998s
+2025-05-20 19:44:29,277 - strategy-api - INFO - Created user: testuser_5525
+2025-05-20 19:44:29,277 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_5525 registered
+2025-05-20 19:44:29,277 - strategy-api - INFO - Request: POST /v1/auth/register Status: 200 Time: 0.2011s
+2025-05-20 19:44:29,477 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:29,477 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1978s
+2025-05-20 19:44:29,480 - strategy-api - INFO - Request: POST /v1/auth/mfa/setup Status: 422 Time: 0.0002s
+2025-05-20 19:44:29,484 - strategy-api - INFO - Request: POST /v1/auth/mfa/enable Status: 422 Time: 0.0004s
+2025-05-20 19:44:29,683 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_5525 logged in
+2025-05-20 19:44:29,683 - strategy-api - INFO - Request: POST /v1/auth/token Status: 200 Time: 0.1978s
+2025-05-20 19:44:29,685 - strategy-api - INFO - Request: POST /v1/auth/mfa/disable Status: 422 Time: 0.0002s
+2025-05-20 19:44:38,168 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0002s
+2025-05-20 19:44:38,376 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:44:38,376 - strategy-api - INFO - Request: POST /v1/auth/token Status: 401 Time: 0.2062s
+2025-05-20 19:44:38,379 - strategy-api - INFO - Loading summary data from /Users/antenehtessema/Desktop/botsalgo/data/summary_report.csv
+2025-05-20 19:44:38,380 - strategy-api - INFO - Processed 42 summary records successfully
+2025-05-20 19:44:38,381 - strategy-api - INFO - Request: GET /v1/analysis/summary Status: 200 Time: 0.0024s
+2025-05-20 19:44:38,382 - strategy-api - INFO - Loading weights data from /Users/antenehtessema/Desktop/botsalgo/data/weight_table.json
+2025-05-20 19:44:38,383 - strategy-api - INFO - Loaded weights for 7 market types
+2025-05-20 19:44:38,383 - strategy-api - INFO - Request: GET /v1/analysis/weights Status: 200 Time: 0.0006s
+2025-05-20 19:45:45,204 - strategy-api - INFO - Shutting down Strategy Analysis API v2.0.0
+2025-05-20 19:45:45,204 - strategy-api - INFO - API uptime: 82.82s

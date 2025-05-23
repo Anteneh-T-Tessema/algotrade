@@ -1,0 +1,8 @@
+{
+  "strategy_name": "DCA",
+  "market_type": "normal market",
+  "timestamp": "2025-05-20T13:36:40.235236",
+  "total_return": -0.13,
+  "win_rate": 0.5,
+  "sharpe_ratio": -0.23
+}

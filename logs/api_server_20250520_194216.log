@@ -1,0 +1,150 @@
+2025-05-20 19:42:16,681 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 19:42:16,903 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:42:16,912 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0 on 0.0.0.0:8000
+2025-05-20 19:42:16,912 - strategy-api - INFO - API URLs:
+2025-05-20 19:42:16,912 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 19:42:16,912 - strategy-api - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 19:42:16,912 - strategy-api - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 19:42:16,912 - strategy-api - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 19:42:17,155 - strategy-api - INFO - Created default admin user: admin
+2025-05-20 19:42:17,163 - strategy-api - INFO - Starting Strategy Analysis API v2.0.0
+2025-05-20 19:42:17,164 - strategy-api - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 19:42:17,164 - strategy-api - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 19:42:25,581 - strategy-api - INFO - Request: GET / Status: 404 Time: 0.0003s
+2025-05-20 19:42:25,781 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:42:25,782 - strategy-api - INFO - Request: POST /v1/auth/token Status: 401 Time: 0.1999s
+2025-05-20 19:42:25,987 - strategy-api - INFO - Created user: testuser_3245
+2025-05-20 19:42:25,987 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_3245 registered
+2025-05-20 19:42:25,987 - strategy-api - ERROR - Error registering user: 'UserManager' object has no attribute 'user_to_response'
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/production_api_server.py", line 1184, in register_user
+    return user_manager.user_to_response(created_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UserManager' object has no attribute 'user_to_response'
+2025-05-20 19:42:25,988 - strategy-api - INFO - Request: POST /v1/auth/register Status: 500 Time: 0.2036s
+2025-05-20 19:42:26,194 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_3245 logged in
+2025-05-20 19:42:26,194 - strategy-api - ERROR - Unhandled exception: 'UserManager' object has no attribute 'user_to_response' (Error ID: 77e8b1dcaf2e31e2)
+  + Exception Group Traceback (most recent call last):
+  |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+  |     yield
+  |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "/Users/antenehtessema/.pyenv/versions/3.11.7/lib/python3.11/contextlib.py", line 158, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+    |     raise exc
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/antenehtessema/Desktop/botsalgo/production_api_server.py", line 1109, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    |     raise exc
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 758, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 778, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 299, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 79, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    |     raise exc
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 74, in app
+    |     response = await func(request)
+    |                ^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/fastapi/routing.py", line 278, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/antenehtessema/Desktop/botsalgo/production_api_server.py", line 1266, in login_for_access_token
+    |     "user": user_manager.user_to_response(user)
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    | AttributeError: 'UserManager' object has no attribute 'user_to_response'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "/Users/antenehtessema/.pyenv/versions/3.11.7/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+    raise exc
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/antenehtessema/Desktop/botsalgo/production_api_server.py", line 1109, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+    raise app_exc
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/antenehtessema/Desktop/botsalgo/production_api_server.py", line 1266, in login_for_access_token
+    "user": user_manager.user_to_response(user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UserManager' object has no attribute 'user_to_response'
+2025-05-20 19:43:36,853 - strategy-api - INFO - Shutting down Strategy Analysis API v2.0.0
+2025-05-20 19:43:36,856 - strategy-api - INFO - API uptime: 79.90s

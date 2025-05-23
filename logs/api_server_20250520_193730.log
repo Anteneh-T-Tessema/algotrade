@@ -1,0 +1,57 @@
+2025-05-20 19:37:30,517 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 19:37:30,742 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 19:37:30,946 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO - Starting Strategy Analysis API (Secure) v3.0.0 on 0.0.0.0:8000
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO - API URLs:
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO -   - http://localhost:8000/v1/analysis/summary
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO -   - http://localhost:8000/v1/analysis/weights
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO -   - http://localhost:8000/health (health check)
+2025-05-20 19:37:30,955 - strategy-api-secure - INFO -   - http://localhost:8000/docs (API documentation)
+2025-05-20 19:37:31,227 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 19:37:31,425 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 19:37:31,433 - strategy-api-secure - INFO - Starting Strategy Analysis API (Secure) v3.0.0
+2025-05-20 19:37:31,436 - strategy-api-secure - WARNING - Weights for market type missing market do not sum to 1.0: 0.0
+2025-05-20 19:37:31,436 - strategy-api-secure - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 19:37:31,436 - strategy-api-secure - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 19:37:31,436 - audit - INFO - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0
+2025-05-20 19:38:19,821 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0007s
+2025-05-20 19:38:20,023 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:38:20,023 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 401 Time: 0.2007s
+2025-05-20 19:38:20,227 - strategy-api-secure - INFO - Created user: testuser_4487
+2025-05-20 19:38:20,227 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_4487 registered
+2025-05-20 19:38:20,227 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.2019s
+2025-05-20 19:38:20,429 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_4487 logged in
+2025-05-20 19:38:20,429 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1991s
+2025-05-20 19:38:20,431 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 19:39:33,679 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 19:40:24,711 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0002s
+2025-05-20 19:40:24,911 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:24,911 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 401 Time: 0.1982s
+2025-05-20 19:40:25,108 - strategy-api-secure - INFO - Created user: testuser_9371
+2025-05-20 19:40:25,108 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9371 registered
+2025-05-20 19:40:25,109 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.1955s
+2025-05-20 19:40:25,304 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9371 logged in
+2025-05-20 19:40:25,304 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1937s
+2025-05-20 19:40:25,306 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 19:40:25,311 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/enable Client: 127.0.0.1 Status: 422 Time: 0.0004s
+2025-05-20 19:40:25,314 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/disable Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 19:40:59,453 - strategy-api-secure - INFO - Request: GET / Client: 127.0.0.1 Status: 404 Time: 0.0003s
+2025-05-20 19:40:59,662 - audit - INFO - SECURITY | Type: LOGIN_FAILED | Severity: WARNING | Details: Failed login attempt for user admin
+2025-05-20 19:40:59,662 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 401 Time: 0.2067s
+2025-05-20 19:40:59,861 - strategy-api-secure - INFO - Created user: testuser_9043
+2025-05-20 19:40:59,861 - audit - INFO - SECURITY | Type: USER_REGISTERED | Severity: INFO | Details: User testuser_9043 registered
+2025-05-20 19:40:59,861 - strategy-api-secure - INFO - Request: POST /v1/auth/register Client: 127.0.0.1 Status: 200 Time: 0.1973s
+2025-05-20 19:41:00,060 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:00,060 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1968s
+2025-05-20 19:41:00,062 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/setup Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 19:41:00,066 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/enable Client: 127.0.0.1 Status: 422 Time: 0.0003s
+2025-05-20 19:41:00,265 - audit - INFO - SECURITY | Type: LOGIN_SUCCESS | Severity: INFO | Details: User testuser_9043 logged in
+2025-05-20 19:41:00,266 - strategy-api-secure - INFO - Request: POST /v1/auth/token Client: 127.0.0.1 Status: 200 Time: 0.1978s
+2025-05-20 19:41:00,268 - strategy-api-secure - INFO - Request: POST /v1/auth/mfa/disable Client: 127.0.0.1 Status: 422 Time: 0.0002s
+2025-05-20 19:41:34,337 - strategy-api-secure - INFO - Shutting down Strategy Analysis API (Secure) v3.0.0
+2025-05-20 19:41:34,338 - audit - INFO - SECURITY | Type: SHUTDOWN | Severity: INFO | Details: API Server stopped, uptime=243.31s

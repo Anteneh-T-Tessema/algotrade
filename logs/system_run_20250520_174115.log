@@ -1,0 +1,72 @@
+[2025-05-20 17:41:15] Starting the strategy analysis and dashboard system
+[2025-05-20 17:41:15] Project root: /Users/antenehtessema/Desktop/botsalgo
+[2025-05-20 17:41:15] Log file: /Users/antenehtessema/Desktop/botsalgo/logs/system_run_20250520_174115.log
+[2025-05-20 17:41:15] Changed to project directory: /Users/antenehtessema/Desktop/botsalgo
+[2025-05-20 17:41:15] Using Python: /Users/antenehtessema/Desktop/botsalgo/venv/bin/python
+[2025-05-20 17:41:15] Python version: Python 3.11.7
+[2025-05-20 17:41:15] Checking required Python packages...
+[2025-05-20 17:41:16] Step 1: Running the analysis notebook to generate data files...
+[2025-05-20 17:41:21] Data files successfully generated:
+[2025-05-20 17:41:21]   - /Users/antenehtessema/Desktop/botsalgo/data/summary_report.csv (      43 lines)
+[2025-05-20 17:41:21]   - /Users/antenehtessema/Desktop/botsalgo/data/weight_table.json (      57 lines)
+[2025-05-20 17:41:21] Step 2: Testing the EnsembleStrategy implementation...
+[2025-05-20 17:41:21] Step 3: Starting the API server on port 8000...
+[2025-05-20 17:41:21] API server logs will be written to: /Users/antenehtessema/Desktop/botsalgo/logs/api_server_20250520_174115.log
+[2025-05-20 17:41:21] API server started with PID: 17406
+[2025-05-20 17:41:21] API URLs:
+[2025-05-20 17:41:21]   - http://localhost:8000/v1/analysis/summary
+[2025-05-20 17:41:21]   - http://localhost:8000/v1/analysis/weights
+[2025-05-20 17:41:21]   - http://localhost:8000/docs (API documentation)
+[2025-05-20 17:41:24] Step 4: Testing the API endpoints...
+[2025-05-20 17:41:24] Testing Summary endpoint: http://localhost:8000/v1/analysis/summary
+[2025-05-20 17:41:25] ✅ Summary endpoint is working (HTTP 200)
+[2025-05-20 17:41:25] Sample response:   [{"strategy":"TrendFollowing","market_type":"sideways market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"normal market","total_return":1.47,"win_rate":1.0,"sharpe_ratio":0.38,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"missing market","total_return":0.39,"win_rate":1.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"sideways market","total_return":0.01,"win_rate":1.0,"sharpe_ratio":0.01,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"missing market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"sideways market","total_return":-11.16,"win_rate":0.0,"sharpe_ratio":-0.41,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"sideways market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"invalid market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"trending market","total_return":0.34,"win_rate":1.0,"sharpe_ratio":0.97,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"volatile market","total_return":-0.27,"win_rate":0.0,"sharpe_ratio":-0.13,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"trending market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"volatile market","total_return":-0.68,"win_rate":0.0,"sharpe_ratio":0.01,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"trending market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"gappy market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"normal market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"normal market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"invalid market","total_return":-0.3,"win_rate":0.0,"sharpe_ratio":-0.41,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"trending market","total_return":14.7,"win_rate":0.75,"sharpe_ratio":1.51,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"normal market","total_return":18.34,"win_rate":1.0,"sharpe_ratio":0.54,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"gappy market","total_return":15.75,"win_rate":1.0,"sharpe_ratio":0.69,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"gappy market","total_return":-0.03,"win_rate":0.0,"sharpe_ratio":-0.03,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"normal market","total_return":-0.13,"win_rate":0.5,"sharpe_ratio":-0.23,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"invalid market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"missing market","total_return":3.3,"win_rate":1.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"sideways market","total_return":0.05,"win_rate":1.0,"sharpe_ratio":0.03,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"gappy market","total_return":-0.3,"win_rate":0.3333,"sharpe_ratio":-0.39,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"sideways market","total_return":0.32,"win_rate":1.0,"sharpe_ratio":0.04,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"invalid market","total_return":0.57,"win_rate":0.963,"sharpe_ratio":0.71,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"missing market","total_return":2.97,"win_rate":0.5,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"gappy market","total_return":-3.24,"win_rate":0.0,"sharpe_ratio":-0.39,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"volatile market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"invalid market","total_return":0.35,"win_rate":0.6667000000000001,"sharpe_ratio":0.04,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"missing market","total_return":0.95,"win_rate":1.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"volatile market","total_return":2.93,"win_rate":0.5,"sharpe_ratio":0.16,"max_drawdown_pct":null},{"strategy":"DCA","market_type":"volatile market","total_return":0.19,"win_rate":0.8667,"sharpe_ratio":0.09,"max_drawdown_pct":null},{"strategy":"Scalping","market_type":"normal market","total_return":-14.58,"win_rate":0.0,"sharpe_ratio":-2.86,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"invalid market","total_return":-0.23,"win_rate":0.0,"sharpe_ratio":-0.01,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"gappy market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"TrendFollowing","market_type":"volatile market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"MeanReversion","market_type":"missing market","total_return":0.0,"win_rate":0.0,"sharpe_ratio":0.0,"max_drawdown_pct":null},{"strategy":"GridTrading","market_type":"trending market","total_return":2.23,"win_rate":1.0,"sharpe_ratio":1.95,"max_drawdown_pct":null},{"strategy":"Arbitrage","market_type":"trending market","total_return":20.3,"win_rate":1.0,"sharpe_ratio":2.01,"max_drawdown_pct":null}]
+[2025-05-20 17:41:25] Testing Weights endpoint: http://localhost:8000/v1/analysis/weights
+[2025-05-20 17:41:25] ✅ Weights endpoint is working (HTTP 200)
+[2025-05-20 17:41:25] Sample response:   {"gappy market":{"Arbitrage":0.0,"DCA":0.0,"GridTrading":0.0,"MeanReversion":0.0,"Scalping":1.0,"TrendFollowing":0.0},"invalid market":{"Arbitrage":0.0,"DCA":0.9466666666666667,"GridTrading":0.0,"MeanReversion":0.0,"Scalping":0.05333333333333334,"TrendFollowing":0.0},"missing market":{"Arbitrage":0.0,"DCA":0.0,"GridTrading":0.0,"MeanReversion":0.0,"Scalping":0.0,"TrendFollowing":0.0},"normal market":{"Arbitrage":0.5869565217391305,"DCA":0.0,"GridTrading":0.41304347826086957,"MeanReversion":0.0,"Scalping":0.0,"TrendFollowing":0.0},"sideways market":{"Arbitrage":0.5,"DCA":0.125,"GridTrading":0.375,"MeanReversion":0.0,"Scalping":0.0,"TrendFollowing":0.0},"trending market":{"Arbitrage":0.31211180124223603,"DCA":0.15062111801242237,"GridTrading":0.30279503105590067,"MeanReversion":0.0,"Scalping":0.23447204968944102,"TrendFollowing":0.0},"volatile market":{"Arbitrage":0.038461538461538464,"DCA":0.34615384615384615,"GridTrading":0.0,"MeanReversion":0.0,"Scalping":0.6153846153846154,"TrendFollowing":0.0}}
+[2025-05-20 17:41:25] Running comprehensive API test script...
+Testing API at http://localhost:8000
+
+--- Testing /v1/analysis/summary endpoint ---
+✅ Summary endpoint works: 42 records retrieved
+
+Sample summary record:
+{'market_type': 'sideways market',
+ 'max_drawdown_pct': None,
+ 'sharpe_ratio': 0.0,
+ 'strategy': 'TrendFollowing',
+ 'total_return': 0.0,
+ 'win_rate': 0.0}
+
+--- Testing /v1/analysis/weights endpoint ---
+✅ Weights endpoint works: Data for 7 market types retrieved
+
+Sample weight data for 'gappy market':
+{'Arbitrage': 0.0,
+ 'DCA': 0.0,
+ 'GridTrading': 0.0,
+ 'MeanReversion': 0.0,
+ 'Scalping': 1.0,
+ 'TrendFollowing': 0.0}
+
+--- Testing /docs endpoint ---
+✅ Documentation endpoint works
+[2025-05-20 17:41:25] ✅ Comprehensive API tests passed
+[2025-05-20 17:41:25] Step 5: Opening API documentation in browser...
+[2025-05-20 17:41:25] Step 6: Found web dashboard, checking if we can start it...
+[2025-05-20 17:41:25] npm is available, let's check if we need to install dependencies
+[2025-05-20 17:41:25] Starting web dashboard...
+[2025-05-20 17:41:25] Web dashboard started with PID: 17512
+[2025-05-20 17:41:25] Web dashboard available at: http://localhost:3000
+[2025-05-20 17:41:25] ===================================================
+[2025-05-20 17:41:25] System is now running!
+[2025-05-20 17:41:25] ===================================================
+[2025-05-20 17:41:25] API server running on: http://localhost:8000
+[2025-05-20 17:41:25] API endpoints:
+[2025-05-20 17:41:25]   - http://localhost:8000/v1/analysis/summary
+[2025-05-20 17:41:25]   - http://localhost:8000/v1/analysis/weights
+[2025-05-20 17:41:25]   - http://localhost:8000/docs (API documentation)
+[2025-05-20 17:41:25] Web dashboard: http://localhost:3000 (if started)
+[2025-05-20 17:41:25] ===================================================
+[2025-05-20 17:41:25] Press Ctrl+C to stop the system
+[2025-05-20 17:41:25] Showing API server logs (Press Ctrl+C to stop):

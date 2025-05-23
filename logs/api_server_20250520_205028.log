@@ -1,0 +1,13 @@
+2025-05-20 20:50:28,151 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/antenehtessema/Desktop/botsalgo/venv/lib/python3.11/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-20 20:50:28,367 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 20:50:28,603 - strategy-api-secure - INFO - Created default admin user: admin
+2025-05-20 20:50:28,615 - strategy-api-secure - INFO - Starting Strategy Analysis API (Secure) v3.0.0
+2025-05-20 20:50:28,617 - strategy-api-secure - WARNING - Weights for market type missing market do not sum to 1.0: 0.0
+2025-05-20 20:50:28,617 - strategy-api-secure - INFO - Data validation: Summary=True, Weights=True
+2025-05-20 20:50:28,617 - strategy-api-secure - INFO - Security: API Key Auth=False, Rate Limit=60
+2025-05-20 20:50:28,617 - audit - INFO - SECURITY | Type: STARTUP | Severity: INFO | Details: API Server started, version=3.0.0

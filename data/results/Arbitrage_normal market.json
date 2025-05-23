@@ -1,0 +1,8 @@
+{
+  "strategy_name": "Arbitrage",
+  "market_type": "normal market",
+  "timestamp": "2025-05-20T13:36:40.231892",
+  "total_return": 18.34,
+  "win_rate": 1.0,
+  "sharpe_ratio": 0.54
+}

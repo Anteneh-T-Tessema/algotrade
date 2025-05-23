@@ -1,0 +1,10 @@
+2025-05-18 22:38:36 - deploy - INFO - Starting deployment process
+2025-05-18 22:38:36 - deploy - ERROR - Failed to initialize Binance client: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+2025-05-18 22:38:36 - deploy - WARNING - Binance client not available. Using mock data.
+2025-05-18 22:38:36 - deploy - INFO - Low volatility trending market detected (volatility: 1.56%, change: 16.69%)
+2025-05-18 22:38:36 - deploy - INFO - Selected strategy for current market conditions: dca
+2025-05-18 22:38:36 - deploy - WARNING - No backtest results found. Run backtests before deploying.
+2025-05-18 22:38:36 - deploy - WARNING - No backtest results available. Defaulting to trend_following strategy.
+2025-05-18 22:38:36 - deploy - INFO - Market analysis for BTCUSDT:
+2025-05-18 22:38:36 - deploy - INFO - - Market type: dca
+2025-05-18 22:38:36 - deploy - INFO - - Recommended strategy: trend_following

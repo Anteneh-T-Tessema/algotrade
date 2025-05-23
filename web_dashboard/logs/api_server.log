@@ -1,0 +1,29 @@
+2025-05-19 12:09:10 - api_server - INFO - Starting background tasks
+2025-05-19 12:24:26 - api_server - INFO - Starting background tasks
+2025-05-19 12:28:22 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg connected for market data. Total connections for market: 1
+2025-05-19 12:28:22 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg connected for market data. Total connections for market: 2
+2025-05-19 12:28:36 - api_server - INFO - Client LjjlVwEGdP_a95arnbND3 connected for market data. Total connections for market: 3
+2025-05-19 12:28:36 - api_server - INFO - Client LjjlVwEGdP_a95arnbND3 connected for market data. Total connections for market: 4
+2025-05-19 12:30:26 - api_server - INFO - Client LjjlVwEGdP_a95arnbND3 connected for market data. Total connections for market: 5
+2025-05-19 12:30:26 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg connected for market data. Total connections for market: 6
+2025-05-19 12:30:26 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data. Total connections for market: 3
+2025-05-19 12:30:26 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data
+2025-05-19 12:30:28 - api_server - INFO - Client LjjlVwEGdP_a95arnbND3 disconnected from market data. Total connections for market: 0
+2025-05-19 12:30:28 - api_server - INFO - Client LjjlVwEGdP_a95arnbND3 disconnected from market data
+2025-05-19 12:48:03 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh connected for market data. Total connections for market: 1
+2025-05-19 12:48:03 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh connected for market data. Total connections for market: 2
+2025-05-19 12:48:08 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data. Total connections for market: 2
+2025-05-19 12:48:08 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data
+2025-05-19 12:48:08 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data. Total connections for market: 2
+2025-05-19 12:48:08 - api_server - INFO - Client PM6QVP-RIjTtj7gtBDlgg disconnected from market data
+2025-05-19 12:48:19 - api_server - INFO - Client Tp10utnih3oixXQFbMFAH connected for market data. Total connections for market: 3
+2025-05-19 12:48:19 - api_server - INFO - Client Tp10utnih3oixXQFbMFAH connected for market data. Total connections for market: 4
+2025-05-19 12:48:21 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh disconnected from market data. Total connections for market: 2
+2025-05-19 12:48:21 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh disconnected from market data
+2025-05-19 12:48:21 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh disconnected from market data. Total connections for market: 2
+2025-05-19 12:48:21 - api_server - INFO - Client 3eKv-9KsbtwJIbHCO3EJh disconnected from market data
+2025-05-20 15:46:30 - api_server - INFO - Starting background tasks
+2025-05-20 15:51:43 - api_server - ERROR - Unexpected error calculating risk analysis: 400: Invalid portfolio value
+2025-05-20 15:51:45 - api_server - ERROR - Unexpected error calculating risk analysis: 400: Invalid portfolio value
+2025-05-20 15:53:38 - api_server - ERROR - Error performing stress test: 400: Invalid portfolio value
+2025-05-20 17:06:22 - api_server - INFO - Starting background tasks

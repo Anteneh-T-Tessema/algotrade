@@ -1,0 +1,8 @@
+{
+  "strategy_name": "Arbitrage",
+  "market_type": "volatile market",
+  "timestamp": "2025-05-20T13:36:40.233532",
+  "total_return": -0.68,
+  "win_rate": 0.0,
+  "sharpe_ratio": 0.01
+}

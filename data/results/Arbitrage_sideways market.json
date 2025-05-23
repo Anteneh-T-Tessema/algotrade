@@ -1,0 +1,8 @@
+{
+  "strategy_name": "Arbitrage",
+  "market_type": "sideways market",
+  "timestamp": "2025-05-20T13:36:40.232971",
+  "total_return": 0.32,
+  "win_rate": 1.0,
+  "sharpe_ratio": 0.04
+}

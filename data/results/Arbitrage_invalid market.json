@@ -1,0 +1,8 @@
+{
+  "strategy_name": "Arbitrage",
+  "market_type": "invalid market",
+  "timestamp": "2025-05-20T13:36:40.234948",
+  "total_return": -0.23,
+  "win_rate": 0.0,
+  "sharpe_ratio": -0.01
+}

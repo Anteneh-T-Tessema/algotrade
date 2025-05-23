@@ -1,0 +1,8 @@
+{
+  "strategy_name": "GridTrading",
+  "market_type": "sideways market",
+  "timestamp": "2025-05-20T13:36:40.229498",
+  "total_return": 0.05,
+  "win_rate": 1.0,
+  "sharpe_ratio": 0.03
+}

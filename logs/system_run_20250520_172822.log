@@ -1,0 +1,27 @@
+[2025-05-20 17:28:22] Starting the strategy analysis and dashboard system
+[2025-05-20 17:28:23] Project root: /Users/antenehtessema/Desktop/botsalgo
+[2025-05-20 17:28:23] Log file: /Users/antenehtessema/Desktop/botsalgo/logs/system_run_20250520_172822.log
+[2025-05-20 17:28:23] Changed to project directory: /Users/antenehtessema/Desktop/botsalgo
+[2025-05-20 17:28:23] Using Python: /Users/antenehtessema/Desktop/botsalgo/venv/bin/python
+[2025-05-20 17:28:23] Python version: Python 3.11.7
+[2025-05-20 17:28:23] Checking required Python packages...
+[2025-05-20 17:28:37] Step 1: Running the analysis notebook to generate data files...
+[2025-05-20 17:28:51] Data files successfully generated:
+[2025-05-20 17:28:51]   - /Users/antenehtessema/Desktop/botsalgo/data/summary_report.csv (      43 lines)
+[2025-05-20 17:28:51]   - /Users/antenehtessema/Desktop/botsalgo/data/weight_table.json (      57 lines)
+[2025-05-20 17:28:51] Step 2: Testing the EnsembleStrategy implementation...
+[2025-05-20 17:28:51] Step 3: Starting the API server on port 8000...
+[2025-05-20 17:28:51] API server logs will be written to: /Users/antenehtessema/Desktop/botsalgo/logs/api_server_20250520_172822.log
+[2025-05-20 17:28:51] Creating a runtime API server script...
+[2025-05-20 17:28:52] API server started with PID: 7485
+[2025-05-20 17:28:52] API URLs:
+[2025-05-20 17:28:52]   - http://localhost:8000/v1/analysis/summary
+[2025-05-20 17:28:52]   - http://localhost:8000/v1/analysis/weights
+[2025-05-20 17:28:52]   - http://localhost:8000/docs (API documentation)
+[2025-05-20 17:28:55] Step 4: Testing the API endpoints...
+[2025-05-20 17:28:55] Testing Summary endpoint: http://localhost:8000/v1/analysis/summary
+[2025-05-20 17:28:55] Attempt 1: Summary endpoint returned HTTP 500
+[2025-05-20 17:28:57] Attempt 2: Summary endpoint returned HTTP 500
+[2025-05-20 17:28:59] Attempt 3: Summary endpoint returned HTTP 500
+[2025-05-20 17:29:01] ❌ Summary endpoint is not working after 3 attempts
+[2025-05-20 17:29:01] Error response: Internal Server Error
